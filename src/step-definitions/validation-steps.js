@@ -6,7 +6,7 @@ Then('Page title should {string} {string}', async function(shouldBeParam, titleT
   return compareText(pageTitle, titleText, shouldBeParam);
 });
 
-// Then(/^Page title should (:not )? (conatin|be equal to) "(.*)"$/, function(notArg, shouldBeParam, titleText) {
+// Then(/^Page title should "(:not )? (conatin|be equal to)" "(.*)"$/, function(notArg, shouldBeParam, titleText) {
 //   const compareParameter = `${notArg}${shouldBeParam}`;
 //   const pageTitle = await browser.getTitle();
 //   return compareText(pageTitle, titleText, shouldBeParam, compareParameter);
